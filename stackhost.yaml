@@ -1,6 +1,5 @@
-1 stackhost.yaml
-2 name:momo
-3 runtime: node
-4 build:npm install
-5 start:npm run start
-6 port：3000
+name:momo
+runtime: node
+build:npm install
+start:npm run start
+port：3000
