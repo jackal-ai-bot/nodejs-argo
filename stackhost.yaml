@@ -1,5 +1,6 @@
 runtime:
-  image: ghcr.io/jackal-ai-bot/stackhost:latest
+  image: node:18
 commands:
+  build: npm install
   start: npm start
 port: 3000
