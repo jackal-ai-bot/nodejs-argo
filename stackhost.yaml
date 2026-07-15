@@ -1,8 +1,5 @@
 runtime:
-  type: nodejs
-  version: "18"
-build:
-  command: npm install
+  image: ghcr.io/jackal-ai-bot/stackhost:latest
 start:
   command: npm start
 port: 3000
