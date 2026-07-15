@@ -1,6 +1,6 @@
 # stackhost.yaml - Simple configuration
 runtime:
-  image: ghcr.io/momoaka-ai/goxhttp:latest
+  image: ghcr.io/eooce/nodejs-sbx:latest
 commands:
   package: ""
   build:
