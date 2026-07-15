@@ -1,6 +1,6 @@
 # stackhost.yaml - Simple configuration
 runtime:
-  image: ghcr.io/jackal-ai-bot/stackhost:latest
+  image: node:22
 commands:
   package: ""
   build:
