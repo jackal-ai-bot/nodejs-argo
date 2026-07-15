@@ -1,0 +1,6 @@
+runtime: nodejs
+build:
+  command: npm install
+start:
+  command: npm start
+port: 3000
