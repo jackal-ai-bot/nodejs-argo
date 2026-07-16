@@ -1,184 +1,152 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>守护动物 · 共建家园</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Marine Animals</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eaf7ff;
+            color: #333;
+        }
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+        header {
+            background: linear-gradient(to right, #0077be, #00aaff);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-body{
-    font-family:"Microsoft YaHei",sans-serif;
-    background:url("https://images.unsplash.com/photo-1474511320723-9a56873867b5") center/cover fixed;
-    color:white;
-}
+        nav {
+            background-color: #005f8c;
+            padding: 10px;
+            text-align: center;
+        }
 
-.overlay{
-    background:rgba(0,0,0,0.45);
-    min-height:100vh;
-    padding:30px;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-.header{
-    text-align:center;
-    margin-top:20px;
-}
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
 
-.header h1{
-    font-size:3rem;
-    margin-bottom:10px;
-}
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
 
-.header p{
-    font-size:1.2rem;
-}
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+        }
 
-.search-box{
-    margin:40px auto;
-    max-width:600px;
-}
+        footer {
+            background-color: #005f8c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
 
-.search-box input{
-    width:100%;
-    padding:15px;
-    border:none;
-    border-radius:30px;
-    font-size:18px;
-}
+        .btn {
+            display: inline-block;
+            background-color: #0077be;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
 
-.animals{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:rgba(255,255,255,0.15);
-    backdrop-filter:blur(6px);
-    border-radius:20px;
-    overflow:hidden;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:15px;
-}
-
-.card h3{
-    margin-bottom:10px;
-}
-
-.card p{
-    line-height:1.6;
-}
-
-.action{
-    text-align:center;
-    margin:50px 0;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 35px;
-    background:#4CAF50;
-    color:white;
-    text-decoration:none;
-    border-radius:30px;
-    font-size:18px;
-}
-
-.footer{
-    text-align:center;
-    margin-top:50px;
-    padding:20px;
-    color:#ddd;
-}
-</style>
+        .btn:hover {
+            background-color: #005f8c;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="overlay">
+<header>
+    <h1>Protect Marine Animals</h1>
+    <p>Every creature in the ocean deserves a safe and healthy home.</p>
+</header>
 
-<div class="header">
-    <h1>🐾 守护动物 · 共建家园</h1>
-    <p>保护野生动物，就是保护人类共同的未来</p>
-</div>
+<nav>
+    <a href="#importance">Importance</a>
+    <a href="#threats">Threats</a>
+    <a href="#actions">Take Action</a>
+</nav>
 
-<div class="search-box">
-    <input type="text" placeholder="搜索动物知识...">
-</div>
+<section id="importance">
+    <h2>Why Marine Animals Matter</h2>
+    <p>
+        Marine animals play a vital role in maintaining the balance of our ecosystem.
+        From tiny plankton to giant whales, every species contributes to the health of
+        the oceans and our planet.
+    </p>
+</section>
 
-<div class="animals">
-
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7">
-        <div class="card-content">
-            <h3>大熊猫</h3>
+<section id="threats">
+    <h2>Major Threats</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Plastic Pollution</h3>
             <p>
-                大熊猫是中国国宝，也是全球生物多样性保护的重要象征。
+                Millions of tons of plastic enter the ocean every year, harming turtles,
+                dolphins, and countless other marine species.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Overfishing</h3>
+            <p>
+                Unsustainable fishing practices reduce fish populations and disrupt marine
+                food chains.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Climate Change</h3>
+            <p>
+                Rising ocean temperatures and acidification threaten coral reefs and
+                marine biodiversity.
             </p>
         </div>
     </div>
+</section>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
-        <div class="card-content">
-            <h3>东北虎</h3>
-            <p>
-                东北虎是世界上体型最大的猫科动物之一，数量极其稀少。
-            </p>
-        </div>
-    </div>
+<section id="actions">
+    <h2>How You Can Help</h2>
+    <ul>
+        <li>Reduce the use of single-use plastics.</li>
+        <li>Participate in beach and river clean-up activities.</li>
+        <li>Support organizations dedicated to ocean conservation.</li>
+        <li>Spread awareness about protecting marine life.</li>
+    </ul>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a">
-        <div class="card-content">
-            <h3>亚洲象</h3>
-            <p>
-                森林减少和栖息地破坏正在威胁亚洲象的生存。
-            </p>
-        </div>
-    </div>
+    <p>
+        Together, we can make a difference and ensure that future generations will enjoy
+        the beauty of our oceans.
+    </p>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1501706362039-c6e80948f11f">
-        <div class="card-content">
-            <h3>雪豹</h3>
-            <p>
-                雪豹生活在高寒山区，被誉为“雪山之王”。
-            </p>
-        </div>
-    </div>
+    <a href="#" class="btn">Join the Movement</a>
+</section>
 
-</div>
-
-<div class="action">
-    <a href="#" class="btn">加入动物保护行动</a>
-</div>
-
-<div class="footer">
-    © 2026 Animal Protection Foundation · 爱护生命，尊重自然
-</div>
-
-</div>
+<footer>
+    <p>&copy; 2026 Protect Marine Animals. Save the Ocean, Save Our Future.</p>
+</footer>
 
 </body>
 </html>
