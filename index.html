@@ -1,151 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protect Marine Animals</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #eaf7ff;
-            color: #333;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protect Marine Life</title>
 
-        header {
-            background: linear-gradient(to right, #0077be, #00aaff);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#eef9ff;
+    color:#003049;
+}
 
-        nav {
-            background-color: #005f8c;
-            padding: 10px;
-            text-align: center;
-        }
+header{
+    background:linear-gradient(135deg,#0077b6,#00b4d8);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
+header h1{
+    font-size:50px;
+}
 
-        section {
-            padding: 30px;
-            max-width: 1000px;
-            margin: auto;
-        }
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:30px 0;
+}
 
-        .card-container {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.section{
+    margin-bottom:50px;
+}
 
-        .card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            flex: 1;
-            min-width: 250px;
-            padding: 20px;
-        }
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
 
-        footer {
-            background-color: #005f8c;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
 
-        .btn {
-            display: inline-block;
-            background-color: #0077be;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
 
-        .btn:hover {
-            background-color: #005f8c;
-        }
-    </style>
+.card h3{
+    padding:10px;
+}
+
+.card p{
+    padding:0 10px 15px;
+}
+
+footer{
+    background:#023e8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.quote{
+    font-size:24px;
+    font-style:italic;
+    text-align:center;
+    color:#0077b6;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-    <h1>Protect Marine Animals</h1>
-    <p>Every creature in the ocean deserves a safe and healthy home.</p>
+    <h1>Protect Marine Life</h1>
+    <p>Save Our Oceans, Save Our Future</p>
 </header>
 
-<nav>
-    <a href="#importance">Importance</a>
-    <a href="#threats">Threats</a>
-    <a href="#actions">Take Action</a>
-</nav>
+<div class="container">
 
-<section id="importance">
-    <h2>Why Marine Animals Matter</h2>
-    <p>
-        Marine animals play a vital role in maintaining the balance of our ecosystem.
-        From tiny plankton to giant whales, every species contributes to the health of
-        the oceans and our planet.
-    </p>
-</section>
+    <div class="section">
+        <p class="quote">
+            "The ocean is the heart of our planet. Protect it today for tomorrow."
+        </p>
+    </div>
 
-<section id="threats">
-    <h2>Major Threats</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>Plastic Pollution</h3>
-            <p>
-                Millions of tons of plastic enter the ocean every year, harming turtles,
-                dolphins, and countless other marine species.
-            </p>
-        </div>
+    <div class="section">
+        <h2>Why Marine Life Matters</h2>
+        <p>
+            Marine life plays a vital role in maintaining the balance of our planet.
+            Oceans produce oxygen, regulate the climate, and provide food for billions
+            of people. However, pollution, overfishing, and climate change are putting
+            many species at risk.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>Overfishing</h3>
-            <p>
-                Unsustainable fishing practices reduce fish populations and disrupt marine
-                food chains.
-            </p>
-        </div>
+    <div class="section">
+        <h2>Marine Life Gallery</h2>
 
-        <div class="card">
-            <h3>Climate Change</h3>
-            <p>
-                Rising ocean temperatures and acidification threaten coral reefs and
-                marine biodiversity.
-            </p>
+        <div class="gallery">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80">
+                <h3>Sea Turtles</h3>
+                <p>
+                    Sea turtles are endangered because of plastic pollution
+                    and habitat destruction.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&w=800&q=80">
+                <h3>Dolphins</h3>
+                <p>
+                    Dolphins are intelligent marine mammals that need clean
+                    and healthy oceans to survive.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=800&q=80">
+                <h3>Coral Reefs</h3>
+                <p>
+                    Coral reefs support nearly 25% of all marine species and
+                    are often called the rainforests of the sea.
+                </p>
+            </div>
+
         </div>
     </div>
-</section>
 
-<section id="actions">
-    <h2>How You Can Help</h2>
-    <ul>
-        <li>Reduce the use of single-use plastics.</li>
-        <li>Participate in beach and river clean-up activities.</li>
-        <li>Support organizations dedicated to ocean conservation.</li>
-        <li>Spread awareness about protecting marine life.</li>
-    </ul>
+    <div class="section">
+        <h2>How You Can Help</h2>
 
-    <p>
-        Together, we can make a difference and ensure that future generations will enjoy
-        the beauty of our oceans.
-    </p>
+        <ul>
+            <li>Reduce the use of single-use plastics.</li>
+            <li>Join beach cleanup activities.</li>
+            <li>Support sustainable seafood.</li>
+            <li>Educate others about marine conservation.</li>
+            <li>Donate to ocean protection organizations.</li>
+        </ul>
+    </div>
 
-    <a href="#" class="btn">Join the Movement</a>
-</section>
+</div>
 
 <footer>
-    <p>&copy; 2026 Protect Marine Animals. Save the Ocean, Save Our Future.</p>
+    © 2026 Protect Marine Life | Every Drop Counts
 </footer>
 
 </body>
